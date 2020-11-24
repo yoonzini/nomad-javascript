@@ -1,25 +1,48 @@
 .btn {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 body {
-    color: #34495e;
-    transition: color 0.5s ease-in-out;
+  color: #34495e;
+  transition: color 0.5s ease-in-out;
+}
+
+body {
+  background-color: #dfe6e9;
 }
 
 .clicked {
-    color: #7f8c8d;
+  color: #7f8c8d;
 }
 
 h1 {
-    color: midnightblue;
+  color: midnightblue;
 }
 
 .form,
 .greetings {
-    display: none;
+  display: none;
 }
 
 .showing {
-    display: block;
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
 }
